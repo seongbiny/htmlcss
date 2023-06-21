@@ -96,3 +96,95 @@ main{
         background: var(--green);
     }
 }
+
+.add-card{
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    background: pink;
+    color: var(--coral);
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.add-card:hover{
+    background: indianred;
+    color: black;
+}
+
+.submit-button{
+    padding: 7px 10px;
+    background: beige;
+    color: black;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+.submit-button:hover{
+    background: mintcream;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid beige;
+    border-radius: 6px;
+}
+
+.input:focus{
+    border-color: mintcream;
+}
+
+.modal-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+
+.modal{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 11;
+    padding: 20px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.modal-close:hover{
+    transform: scale(1.2);
+}

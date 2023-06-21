@@ -10,14 +10,15 @@
         <span class="title">산 List</span>
     </header>
     <main>
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
+            <button type="button" class="add-card" id="addCard">추가</button>
             <span>한라산</span>
             <span>설악산</span>
             <span>북한산</span>
             <span>관악산</span>
             <span>인왕산</span>
         </div>
-        <section class="container">
+        <section class="container" id="container">
             <div class="card">
                 <img src="./images/hallasan.png" alt="한라산" />
                 <span>한라산: 해발 1,947m</span>
@@ -40,5 +41,19 @@
             </div>
         </section>
     </main>
+
+    <div class="modal-background" id="modal">
+        <form class="modal" id="addCardForm">
+            <span class="modal-close" id="closeModal">X</span>
+            <label for="name" class="label">이름</label>
+            <input id="name" type="text" placeholder="산 이름을 입력해주세요." class="input" required />
+            <label for="image" class="label">사진</label>
+            <input id="image" type="text" placeholder="산 사진을 첨부해주세요." class="input" required />
+            <label for="height" class="label">높이</label>
+            <input id="height" type="text" placeholder="해발 몇미터 산인가요?" class="input" required />
+            <button type="submit" class="submit-button">등록</button>
+        </form>
+    </div>
+    <script src="./javascript.js"></script>
     </body>
 </html>
