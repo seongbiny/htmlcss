@@ -18,7 +18,7 @@ function addCardHandle(e) {
   const image = document.getElementById("image").value;
   const height = document.getElementById("height").value;
   addCard(name, image, height);
-  closeModal();
+  // closeModal();
 }
 
 document
@@ -33,6 +33,12 @@ document.getElementById("closeModal").onclick = function () {
   document.getElementById("modal").style.display = "none";
 };
 
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-}
+// function closeModal() {
+//   document.getElementById("modal").style.display = "none";
+// }
+
+const submitBtn = modal.querySelector(".submit-button");
+
+submitBtn.addEventListener("click", (e) => {
+  modal.style.display = "none";
+});
